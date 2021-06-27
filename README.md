@@ -1,1 +1,1 @@
-# c_-rnek-kodlar
+# c_ornek-kodlar
