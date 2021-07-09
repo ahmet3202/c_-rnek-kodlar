@@ -1,20 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-// masaüstünde boş bir klaör oluşturalım sonrasında klasörün uzantısını kopyalayıp fopen in içine yapıştıralım ve en sona ise dosyanın içine eklenecek olan txt metin belgesini ekleyelim.
+// masaÃ¼stÃ¼nde boÅŸ bir klaÃ¶r oluÅŸturalÄ±m sonrasÄ±nda klasÃ¶rÃ¼n uzantÄ±sÄ±nÄ± kopyalayÄ±p fopen in iÃ§ine yapÄ±ÅŸtÄ±ralÄ±m ve en sona ise dosyanÄ±n iÃ§ine eklenecek olan txt metin belgesini ekleyelim.
 int main() {
-	FILE *dosyaadres;                                                             // dosya işlemi için olması gereken komut.
+	FILE *dosyaadres;                                                             // dosya iÅŸlemi iÃ§in olmasÄ± gereken komut.
 	
-    dosyaadres=fopen("C:\\Users\\Toshiba\\Desktop\\cdosya\\yazi.txt","w");      // w komutu yani write eklemiş olduğumuz dosyaya yazdırdık.
+    dosyaadres=fopen("C:\\Users\\Toshiba\\Desktop\\cdosya\\yazi.txt","w");      // w komutu yani write eklemiÅŸ olduÄŸumuz dosyaya yazdÄ±rdÄ±k.
     
-    	int sayi1,sayi2;                                                      // klavyeden 2 adet sayi alarak toplamını oluşturduk.
+    	int sayi1,sayi2;                                                      // klavyeden 2 adet sayi alarak toplamÄ±nÄ± oluÅŸturduk.
 	printf("2 adet Sayi giriniz\n");
 	scanf("%d%d",&sayi1,&sayi2);
-	int toplam=sayi1+sayi2;                                                // toplam adlı değişkene atayıp 2 sayiyi topladık
-	fprintf(dosyaadres,"Kullanicinin girmis oldugu sayi toplam\n");       // dosyada ilk metin olarak bu görünür
-	fprintf(dosyaadres,"%d\n%d",sayi1,sayi2);                            // dosyada girilen sayiların görünmesi
-	fprintf(dosyaadres,"Bu sayilarin toplami\n");                       // dosyada metin olarak görünmesi
-	fprintf(dosyaadres,"%d\n",toplam);                                 // dosyada sayıların toplamının görülmesi
+	int toplam=sayi1+sayi2;                                                // toplam adlÄ± deÄŸiÅŸkene atayÄ±p 2 sayiyi topladÄ±k
+	fprintf(dosyaadres,"Kullanicinin girmis oldugu sayi toplam\n");       // dosyada ilk metin olarak bu gÃ¶rÃ¼nÃ¼r
+	fprintf(dosyaadres,"%d\n%d",sayi1,sayi2);                            // dosyada girilen sayilarÄ±n gÃ¶rÃ¼nmesi
+	fprintf(dosyaadres,"Bu sayilarin toplami\n");                       // dosyada metin olarak gÃ¶rÃ¼nmesi
+	fprintf(dosyaadres,"%d\n",toplam);                                 // dosyada sayÄ±larÄ±n toplamÄ±nÄ±n gÃ¶rÃ¼lmesi
 
-	printf("%d\n",toplam);                                           // konsolda toplam sonucunun görülmesi
-		fclose(dosyaadres);                                         // dosyanın kapatılması kapanmaz ise de çalışmaktadır. Ancak kapatmakta fayda var.
+	printf("%d\n",toplam);                                           // konsolda toplam sonucunun gÃ¶rÃ¼lmesi
+	system("pause");	
+	fclose(dosyaadres);                                         // dosyanÄ±n kapatÄ±lmasÄ± kapanmaz ise de Ã§alÄ±ÅŸmaktadÄ±r. Ancak kapatmakta fayda var.
