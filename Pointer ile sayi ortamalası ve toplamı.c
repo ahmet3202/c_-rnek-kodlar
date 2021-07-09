@@ -15,15 +15,11 @@
 		for(i=1;i<=5;i++)
 		{
 			scanf("%d",&sayilar[i]);
-			 
-	  
+		
 		}
-	
-	
-	
-		printf("5 tane sayi girinizz\n");
-	
-		ptr=&sayilar[0];
+		 
+	  	printf("5 tane sayi girinizz\n");
+	        ptr=&sayilar[0];
     
 		for(j=0;j<5;j++)
 		{
@@ -35,7 +31,7 @@
 	
 		sonuc=toplam/5;
 		printf(" ortalama %d\n ",sonuc);
-	    printf("Sayilarin toplami %d\n",toplam);
+	        printf("Sayilarin toplami %d\n",toplam);
 
 	
 	
